@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<h1 class="alert alert-danger">Update Detail</h1>
+<hr>
+<form action="" method="post">
+{% csrf_token %}
+<div class="container"> 
+ {{id}}
+ <input type="submit" class="btn btn-primary mt-2">
+ </div>
+</form>
+{% endblock %}
